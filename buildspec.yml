@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=494182402620.dkr.ecr.ap-northeast-2.amazonaws.com/web-repo  # TODO. 내 ECS 주소로 변경 (Elastic Container Service로 검색한다)
+      - REPOSITORY_URI=494182402620.dkr.ecr.ap-northeast-2.amazonaws.com/web # TODO. 내 ECS 주소로 변경 (Elastic Container Service로 검색한다)
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
     commands:
