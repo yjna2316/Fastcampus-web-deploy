@@ -52,7 +52,7 @@ services:
         constraints: [node.role==manager]
 
   web:
-    image: 494182402620.dkr.ecr.ap-northeast-2.amazonaws.com/web-repo:latest
+    image: 322749112518.dkr.ecr.ap-northeast-2.amazonaws.com/web-repo:latest
     networks: 
       - external
     # helthcheck:
